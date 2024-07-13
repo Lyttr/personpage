@@ -31,14 +31,14 @@ const Profile = () => {
           </div>
         }
         actions={[
-          <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer" style={{ color: '#08c' }}><MailOutlined key="mail" /></a>,
-          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" style={{ color: '#08c' }}><GithubOutlined key="github" /></a>,
-          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" style={{ color: '#08c' }}><LinkedinOutlined key="linkedin" /></a>,
+          <a href="mailto:xuanmiaoji@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><MailOutlined key="mail" /></a>,
+          <a href="https://github.com/Lyttr" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><GithubOutlined key="github" /></a>,
+          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><LinkedinOutlined key="linkedin" /></a>,
         ]}
       >
         <Meta
           avatar={<Avatar src="https://via.placeholder.com/64" size={64} />}
-          title={<Title level={2} style={{ color: '#fff' }}>Your Name</Title>}
+          title={<Title level={2} style={{ color: '#fff' }}>Gaoyuan Ji</Title>}
           description={
             <Space direction="vertical" size="large">
               <Paragraph style={{ color: '#aaa', fontSize: '16px' }}>
