@@ -12,14 +12,14 @@ const Profile = () => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh',
+      minHeight: '100vh',
       backgroundColor: '#1e1e1e',
       color: '#fff',
       fontFamily: 'Fira Code, monospace',
       padding: '20px'
     }}>
       <Card
-        style={{ width: '100%', maxWidth: '800px', backgroundColor: '#2d2d2d', border: '1px solid #444' }}
+        style={{ width: '100%', maxWidth: '1000px', backgroundColor: '#2d2d2d', border: '1px solid #444' }}
         cover={
           <div style={{
             display: 'flex',
@@ -31,14 +31,14 @@ const Profile = () => {
           </div>
         }
         actions={[
-          <a href="mailto:xuanmiaoji@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><MailOutlined key="mail" /></a>,
-          <a href="https://github.com/Lyttr" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><GithubOutlined key="github" /></a>,
+          <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><MailOutlined key="mail" /></a>,
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><GithubOutlined key="github" /></a>,
           <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" style={{ color: '#08c', fontSize: '24px' }}><LinkedinOutlined key="linkedin" /></a>,
         ]}
       >
         <Meta
           avatar={<Avatar src="https://via.placeholder.com/64" size={64} />}
-          title={<Title level={2} style={{ color: '#fff' }}>Gaoyuan Ji</Title>}
+          title={<Title level={2} style={{ color: '#fff' }}>Your Name</Title>}
           description={
             <Space direction="vertical" size="large">
               <Paragraph style={{ color: '#aaa', fontSize: '16px' }}>
@@ -49,7 +49,7 @@ const Profile = () => {
                 Experienced in building modern web applications using React, Node.js, and other technologies.
               </Paragraph>
               <Row gutter={[16, 16]}>
-                <Col span={12}>
+                <Col span={24}>
                   <Card title="Projects" bordered={false} style={{ backgroundColor: '#333', color: '#fff' }}>
                     <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
                       Project 1: Description of the project.
@@ -57,10 +57,13 @@ const Profile = () => {
                     <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
                       Project 2: Description of the project.
                     </Paragraph>
+                    <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
+                      Project 3: Description of the project.
+                    </Paragraph>
                   </Card>
                 </Col>
                 <Col span={12}>
-                  <Card title="Skills" bordered={false} style={{ backgroundColor: '#333', color: '#fff' }}>
+                  <Card title="Software Development Skills" bordered={false} style={{ backgroundColor: '#333', color: '#fff' }}>
                     <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
                       - JavaScript
                     </Paragraph>
@@ -72,6 +75,22 @@ const Profile = () => {
                     </Paragraph>
                     <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
                       - CSS
+                    </Paragraph>
+                  </Card>
+                </Col>
+                <Col span={12}>
+                  <Card title="Embedded Development Skills" bordered={false} style={{ backgroundColor: '#333', color: '#fff' }}>
+                    <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
+                      - C/C++
+                    </Paragraph>
+                    <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
+                      - Arduino
+                    </Paragraph>
+                    <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
+                      - Raspberry Pi
+                    </Paragraph>
+                    <Paragraph style={{ color: '#aaa', fontSize: '14px' }}>
+                      - Microcontrollers
                     </Paragraph>
                   </Card>
                 </Col>
